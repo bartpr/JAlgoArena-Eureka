@@ -13,6 +13,6 @@ deploy:
   provider: heroku
   api_key:
     secure: ANte5pK/ekVszpRNg78SyDjgw8ZV7TAJX//mE36UJgIna/vqQOiO7dfyRnygrzFm398yCVNeCiKjNGj34cWZK4tf57kL+OG1v9JmbDqprTGD6FMREqOX1wTEGrSal1Ddh4rOwlGzfEHnY+a7GeFokKrB217pwVcBpwXhhR0s7HPPc4XKZblxD8PGC+Xybq58/BNgjngSUmgpgk7nLbvL+kLg1k/+5hRbA6A6eSfWHozlIa/u5H9napaHu07XkIN4xp4dSidYKGcHzSVebwI4cosMX1y/t0lUcgGfebFbyQSyq3mhynuWDoa1/cN2cpCQDjFVVnVWO8WCp+K7JMeekoEEv9d3Zj5jnvoVBPPp6PyuILV2LxU/bTrZlgT7nTrNWALB88EvCM4sJvEhUfXdVaU1R2i1A4cBYTS6hdwKAOAWzn7NXqKalrWDsAPrSuN8Jnsct6WEu3hslnw5zuMKA9NtzQJt/Ef209xvAmHM/ze+RDOdyxlRD9itAAZhNNrTalNZ/zjFJoeYJzyZ0piFjiyroQ/jNh8m7f5wY0f2ruAgPWsZARprFyCn8VPl7Xylqz4avziDzIHnZG+tlm6cXOZejouKeko7HRLz+BeBvAw1bgNxfWQu7IMO8ZgaOfGDvkhv5gevsxjPVHCTQr3HZKj2Hdrvc3MV0b0TB+Ka0mM=
-  app: JAlgoArena-Eureka
+  app: bprzybylski-jalgoarena-eureka
   on:
     repo: bartpr/JAlgoArena-Eureka
