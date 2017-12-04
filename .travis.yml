@@ -5,17 +5,14 @@ before_cache:
 - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 cache:
   directories:
-  - $HOME/.gradle/caches/
-  - $HOME/.gradle/wrapper/
+  - "$HOME/.gradle/caches/"
+  - "$HOME/.gradle/wrapper/"
 before_deploy:
-  - ./gradlew releaseZip
+- "./gradlew releaseZip"
 deploy:
-  provider: releases
+  provider: heroku
   api_key:
-    secure: e8RACm16/fFb0thjIN7/qUTAIhvTYrCbQ6LJiy2hv8Mn5rwkDnVPwTiGqBcvB/AuuQz+kLfg5KttyImW96ElIAQfDoHNdlEdOAyX986Qhd3aaiyW25LnYwws+m1pv5qgh8YaKPoNkWgegMNkY/+ZiwAXnxPwh51h+4tn/dGVy0jw+t8z70R4SKxJVuuoau8q45Vb5LMPFQ5hGPn7uVCrTQhMlzFr7idM5mUU32GR3qgm1sZs8xsM0Jz2RxGjBzld3KEcmU8X2x3+sJcHD4TQ7impuv1oubOwgkuQ5DBeXWpobSYeOF96ToRxTeib0X3J0hb5afHv+T1hOeWG82j365SoFLjfoeAaaQpabmstnPC19u9GprnHWqGZ595+awXRP4Ik3LofJ0Jrd+V4iHBkIoP2l9H1PzOFbh5hvqyPWhKncNfbRS8jNlZyx/wOAu+OLi2jdB1VmKRvmEPniyjmZIwHfQxPVCDab0cvdPxtNK+5JUzsqzRMMCpLX9spMK/mf+tqlA+mZmVYiw0wdiVNPZaZ+HIce9JxBjrxJtNpRCY87JKRGxubwdqgkxvQdNCkviomtMcfx3mz0aM2TXddLj2aJWWs0uMacyChZTD0O7qKhRptkEqn7faBqT8C2GOatkSTK/P3yZV8Vy8eKYtCRatLv3pM2OzKUrvCEOeHIAc=
-  file_glob: true
-  file: "./build/libs/JAlgoArena-Eureka-*.zip"
-  skip_cleanup: true
+    secure: ANte5pK/ekVszpRNg78SyDjgw8ZV7TAJX//mE36UJgIna/vqQOiO7dfyRnygrzFm398yCVNeCiKjNGj34cWZK4tf57kL+OG1v9JmbDqprTGD6FMREqOX1wTEGrSal1Ddh4rOwlGzfEHnY+a7GeFokKrB217pwVcBpwXhhR0s7HPPc4XKZblxD8PGC+Xybq58/BNgjngSUmgpgk7nLbvL+kLg1k/+5hRbA6A6eSfWHozlIa/u5H9napaHu07XkIN4xp4dSidYKGcHzSVebwI4cosMX1y/t0lUcgGfebFbyQSyq3mhynuWDoa1/cN2cpCQDjFVVnVWO8WCp+K7JMeekoEEv9d3Zj5jnvoVBPPp6PyuILV2LxU/bTrZlgT7nTrNWALB88EvCM4sJvEhUfXdVaU1R2i1A4cBYTS6hdwKAOAWzn7NXqKalrWDsAPrSuN8Jnsct6WEu3hslnw5zuMKA9NtzQJt/Ef209xvAmHM/ze+RDOdyxlRD9itAAZhNNrTalNZ/zjFJoeYJzyZ0piFjiyroQ/jNh8m7f5wY0f2ruAgPWsZARprFyCn8VPl7Xylqz4avziDzIHnZG+tlm6cXOZejouKeko7HRLz+BeBvAw1bgNxfWQu7IMO8ZgaOfGDvkhv5gevsxjPVHCTQr3HZKj2Hdrvc3MV0b0TB+Ka0mM=
+  app: JAlgoArena-Eureka
   on:
     repo: bartpr/JAlgoArena-Eureka
-    tags: true
